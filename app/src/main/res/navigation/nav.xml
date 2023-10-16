@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/page_home">
+
+    <fragment
+        android:id="@+id/page_home"
+        android:name="com.leonstyven.mywater.HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/page_WaterList"
+        android:name="com.leonstyven.mywater.WaterListFragment"
+        tools:layout="@layout/fragment_water_list"/>
+    <fragment
+        android:id="@+id/page_settings"
+        android:name="com.leonstyven.mywater.SettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+
+</navigation>
