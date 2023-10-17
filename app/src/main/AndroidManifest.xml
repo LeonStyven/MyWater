@@ -20,12 +20,17 @@
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
+<<<<<<< Updated upstream
             android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+=======
+            android:exported="false"
+            >
+>>>>>>> Stashed changes
         </activity>
         <activity
             android:name=".SplashScreenActivity"
