@@ -75,7 +75,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:text="Subtract 1"
+                    android:text="Subtract"
                     app:icon="@drawable/baseline_expand_more_24" />
 
                 <Button
@@ -86,7 +86,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
-                    android:text="Add 1"
+                    android:text="Add"
                     app:icon="@drawable/baseline_expand_less_24" />
             </LinearLayout>
 
