@@ -9,5 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="li_primary">#FF3601AF</color>
     <color name="li_secondary">#A347BC</color>
-
+    <color name="LightGreen">#ACE4AA</color>
+    <color name="DarkGreen">#307351</color>
+    <color name="DarkClay">#5F758E</color>
+    <color name="LightClay">#C8C7D3</color>
+    <color name="Charcoal">#273E47</color>
 </resources>
