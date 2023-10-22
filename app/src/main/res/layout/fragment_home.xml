@@ -15,10 +15,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            >
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/titleText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -27,17 +29,66 @@
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/LightClay"
-                android:textSize="24sp"
+                android:textSize="48sp"
                 android:textStyle="bold"
                 android:typeface="normal" />
 
+            <TextView
+                android:id="@+id/userGoalText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Goal is: 5"
+                android:textAlignment="center"
+                android:textColor="@color/LightClay"
+                android:textSize="20sp" />
+
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="245dp"
-                android:layout_height="450dp"
+                android:id="@+id/glassesStep"
+                android:layout_width="292dp"
+                android:layout_height="404dp"
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
                 android:src="@drawable/step1" />
+
+            <ProgressBar
+                android:id="@+id/userProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:progress="0"
+                android:progressTint="@color/LightClay"
+                android:translationY="-40dp" />
+
+            <LinearLayout
+                android:id="@+id/btnsLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/lessBtn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Subtract"
+                    app:icon="@drawable/baseline_expand_more_24" />
+
+                <Button
+                    android:id="@+id/plusBtn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="Add"
+                    app:icon="@drawable/baseline_expand_less_24" />
+            </LinearLayout>
 
 
         </LinearLayout>
