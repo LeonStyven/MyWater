@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 
 public class LogActivity extends AppCompatActivity {
 
@@ -12,19 +14,16 @@ public class LogActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log);
-        int delayMillis = 2000; // Define the delay in milliseconds
-
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // Start the HomeActivity
-                Intent intent = new Intent(LogActivity.this, HomeActivity.class);
-                startActivity(intent);
-                finish(); // Finish the current activity
+                Button loginButton = findViewById(R.id.login_button);
+                loginButton.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        // Create an Intent to navigate to the Home Activity
+                        Intent intent = new Intent(LogActivity.this, HomeActivity.class);
+                        startActivity(intent);
+                    }
+                });
             }
-        }, delayMillis);
-
 
     }
-}
+
