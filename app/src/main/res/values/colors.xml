@@ -8,4 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="li_primary">#FF3601AF</color>
+    <color name="li_secondary">#A347BC</color>
+
 </resources>
